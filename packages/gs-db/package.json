@@ -1,0 +1,19 @@
+{
+  "name": "gs-db",
+  "version": "0.1.0",
+  "description": "REST service in front of a DB to handle message ingestion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/theoperatore/game-stack.git"
+  },
+  "author": "Alex Petersen <theoperatore@gmail.com> (http://anpetersen.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theoperatore/game-stack/issues"
+  },
+  "homepage": "https://github.com/theoperatore/game-stack#readme"
+}
