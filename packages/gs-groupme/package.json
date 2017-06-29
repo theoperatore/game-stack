@@ -3,8 +3,14 @@
   "version": "0.1.0",
   "description": "Web service to send GroupMe messages to the gs-db for analysis",
   "main": "index.js",
+  "engines": {
+    "node": "6.11.0"
+  },
+  "enginesStrict": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "scp package.json server.js root@104.131.28.154:gs-groupme/",
+    "remote": "ssh root@104.131.28.154"
   },
   "repository": {
     "type": "git",
@@ -15,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/theoperatore/game-stack/issues"
   },
-  "homepage": "https://github.com/theoperatore/game-stack#readme"
+  "homepage": "https://github.com/theoperatore/game-stack#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "compression": "^1.6.2",
+    "express": "^4.15.3",
+    "request": "^2.81.0"
+  }
 }
